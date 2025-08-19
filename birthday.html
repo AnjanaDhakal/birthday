@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎂 Happy Birthday!</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fce4ec;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .cake {
+      width: 150px;
+      height: 150px;
+      background: #ffbaba;
+      border-radius: 10px;
+      position: relative;
+      animation: bounce 1s infinite alternate;
+    }
+    .candle {
+      width: 10px;
+      height: 30px;
+      background: yellow;
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 3px;
+    }
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cake">
+    <div class="candle"></div>
+  </div>
+
+  <script>
+    alert("🎉 Happy Birthday! Click OK to see your cake!"); 
+    // You can add more animations here if you want
+  </script>
+</body>
+</html>
